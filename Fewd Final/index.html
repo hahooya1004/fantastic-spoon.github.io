@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Best Recipes | Hannah's Kitchen</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css"
+        integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
+        rel="stylesheet" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="short icon" href="./image/icon.png">
+    <link rel="stylesheet" href="./css/main.css">
+
+
+</head>
+
+<body>
+    <header>
+
+        <div class="main-banner">
+            <img class="main-logo" src="./image/icon.png" alt="icon">
+
+            <h2 class="mainh2">Hannah's Kitchen</h2>
+            <form class="main-form" action="" method="POST" target="_blank">
+                <input class="main-input" type="text" id="search">
+                <a class="inputbar" href=""><i class="fas fa-search"></i></a>
+            </form>
+        </div>
+
+        <div class="stickysidebar clearfix">
+            <nav class="sidebar">
+                <a href="#" class="close">X</a>
+                <ul class="sidebarul">
+                    <li class="sidebarli"><a href="#">Recipe</a></li>
+                    <li class="sidebarli"><a href="#">Video</a></li>
+                    <li class="sidebarli"><a href="#">Blog</a></li>
+                    <li class="sidebarli"><a href="#">Follow Us</a></li>
+                    <li class="sidebarli"><a class="seperate" href="#">Subscribe</a></li>
+                    <li class="sidebarli"><a href="#">Log In | Join</a></li>
+                </ul>
+            </nav>
+            <a class="hamburger" href="#"><i class="fa fa-bars"> MENU</i></a>
+
+            <a class="social-icons" href=""><i class="fab fa-facebook-square"></i></a>
+            <a class="social-icons" href=""><i class="fab fa-twitter-square"></i></a>
+            <a class="social-icons" href=""><i class="fab fa-instagram"></i></a>
+            <a class="social-icons" href=""><i class="fab fa-pinterest"></i></a>
+            <a class="social-icons" href=""><i class="fab fa-youtube"></i></a>
+
+            <a href="#" class="login">Log In |</a>
+            <a href="#" class="join">Join</a>
+
+            <!-- <div class="workingModal">
+                <div class="workingmodal-content">
+                    <div id="signupModal">
+                        <a class="close" href="#"><i class="far fa-times-circle"></i></a>
+                        <div class="signup">
+                            <i id="book" class="far fa-bookmark"></i>
+                            <h4 class="save">Save your Favorites</h4>
+                                <h5>Sign up to save your favorite recipe, video, keep your own board and buying out
+                                    products!</h5>
+                            <div class="clearfix">
+                                <button type="submit" class="signupbtn">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="guidewrap">
+                <div class="guidelist">
+                    <a class="guidemenu" id="showmodal" href="#">Search For Recipe</a>
+                    <a class="guidemenu" id="showmodal" href="#">Submit a Recipe</a>
+                    <a class="guidemenu" id="showmodal" href="#">Holloween Special</a>
+                    <a class="guidemenu" id="showmodal" href="#">Back-to-School</a>
+                    <a class="guidemenu" id="showmodal" href="#"><i class="far fa-bookmark"></i>Saves</a>
+
+                    <div class="modal">
+                        <div class="modal-content">
+                            <a class="close" href="#"><i class="far fa-times-circle"></i></a>
+                            <form action="#" method="GET">
+                                <div class="recipefinder">
+                                    <div class="column">
+                                        <h4>Occasions</h4>
+                                        <div class="people">
+                                            <input type="checkbox" name="Twopeopledinner" id>
+                                            <label>Dinner for Two</label>
+                                            <br>
+                                            <input type="checkbox" name="Familydinner" id>
+                                            <label>Family dinner</label>
+                                            <br>
+                                            <input type="checkbox" name="Guestsnight" id>
+                                            <label>Entertaining & Dinner Party</label>
+                                            <br>
+                                            <input type="checkbox" name="kidsmeal" id>
+                                            <label>Kids Meal</label>
+                                            <br>
+                                            <input type="checkbox" name="30mindinner" id>
+                                            <label>30 Minute Dinner</label>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <h4>Regional</h4>
+                                        <div class="international">
+                                            <input type="checkbox" name="amercian" id>
+                                            <label>American</label>
+                                            <br>
+                                            <input type="checkbox" name="asian" id>
+                                            <label>Asian</label>
+                                            <br>
+                                            <input type="checkbox" name="french" id>
+                                            <label>French</label>
+                                            <br>
+                                            <input type="checkbox" name="mexican" id>
+                                            <label>Mexican & Spain</label>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <h4>What Type</h4>
+                                        <div class="typeofthefood">
+                                            <input type="checkbox" name="meatlover" id>
+                                            <label>Maet Lover</label>
+                                            <br>
+                                            <input type="checkbox" name="vegetarian" id>
+                                            <label>Vegetarian</label>
+                                            <br>
+                                            <input type="checkbox" name="vegan" id>
+                                            <label>Vegan</label>
+                                            <br>
+                                            <input type="checkbox" name="pescetarian" id>
+                                            <label>Pescetarian</label>
+                                            <br>
+                                            <input type="checkbox" name="Dessert" id>
+                                            <label>Dessert</label>
+                                            <br>
+                                        </div>
+                                    </div>
+                                    <div class="column">
+                                        <h4>Methods</h4>
+                                        <div class="method">
+                                            <input type="checkbox" name="Baking" id>
+                                            <label>Baking</label>
+                                            <br>
+                                            <input type="checkbox" name="slowcooker" id>
+                                            <label>Slow Cooker</label>
+                                            <br>
+                                            <input type="checkbox" name="Griling" id>
+                                            <label>Grilling</label>
+                                            <br>
+                                            <input type="checkbox" name="roasting" id>
+                                            <label>Roasting</label>
+                                            <br>
+                                            <input type="checkbox" name="Frying" id>
+                                            <label>Frying</label>
+                                            <br>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="point" href="#"><i class="fas fa-hand-point-right"></i></a>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </header>
+
+
+    <div class="second-banner clearfix">
+        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img src="./image/Pizza+Napolitana,+Naples,+Italy.jpeg" alt="pic1">
+                </div>
+
+                <div class="item">
+                    <img src="./image/mac.jpeg" alt="pic2" width="1280" height="653">
+                </div>
+
+                <div class="item">
+                    <img src="./image/food2.jpeg" alt="pic3" width="1280" height="853">
+                </div>
+
+                <div class="item">
+                    <img src="./image/steak.jpeg" alt="pic4" width="1280" height="853">
+                </div>
+
+            </div>
+            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+
+        <section>
+            <div class="features">
+                <h2 class="feature-recipes">Recipes We Love</h2>
+                <a class="browse" href="">brwose recipe <span><i class="fas fa-angle-right"></i></span></a>
+            </div>
+            <div class="row">
+                <article class="col-33 col-50-laptop col-100-tablet">
+                    <a class="gallery" href="#"><img class="space" src="./image/avo.jpg" alt="secpic1">
+                        <h3>Lorem ipsum dolor sit amet</h3><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus nisi, ultrices a
+                            dignissim quis, aliquam</p>
+                    </a>
+                </article>
+                <article class="col-33 col-50-laptop col-100-tablet">
+                    <a class="gallery" href="#"><img class="space" src="./image/bar.jpg" alt="secpic2">
+                        <h3>Lorem ipsum dolor sit amet</h3><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus nisi, ultrices a
+                            dignissim quis, aliquam</p>
+                    </a>
+                </article>
+                <article class="col-33 col-50-laptop col-100-tablet">
+                    <a class="gallery" href="#"><img class="space" src="./image/food.jpg" alt="secpic3">
+                        <h3>Lorem ipsum dolor sit amet</h3><br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus nisi, ultrices a
+                            dignissim quis, aliquam</p>
+                    </a>
+                </article>
+            </div>
+        </section>
+        <section>
+            <div class="readmore">
+                <h3 class="win">Winner of the week</h3>
+                <article class="reciepe-week">
+                    <img src="./image/porkchop.jpg" alt="win1" class="winner" width="350" height="350">
+                    <p>orem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum lacus nisi, ultrices a
+                        dignissim quis, aliquam convallis justo. Praesent sit amet auctor enim, ac feugiat nulla.
+                        Praesent porttitor diam nec metus scelerisque bibendum. Morbi ultricies metus sit amet ligula
+                        dictum aliquam. Sed pharetra, est a porttitor sagittis, justo turpis congue purus, ac iaculis
+                        ipsum turpis quis tellus. Sed placerat diam quis odio elementum, sed facilisis tortor fringilla.
+                        In quis tellus accumsan, tristique ante in, eleifend urna. Nulla dignissim magna eu gravida
+                        accumsan. Suspendisse fermentum hendrerit tortor ut scelerisque. Quisque blandit eget lorem non
+                        accumsan. Proin risus urna, pellentesque nec lacus vel, ornare bibendum ex. Maecenas nec
+                        sollicitudin odio. Maecenas vitae pharetra metus.</p>
+
+                    <p> In vel risus quis lorem iaculis malesuada porttitor sed urna. Fusce aliquet eleifend finibus.
+                        Duis quis commodo mauris, a imperdiet elit. Suspendisse lacinia, metus sit amet tempus
+                        efficitur, velit neque pulvinar dolor, et eleifend tortor nisi nec lorem. Proin fringilla cursus
+                        tellus ac mattis. Duis quis posuere leo. Mauris non vestibulum nisl. Pellentesque congue sit
+                        amet diam eget ullamcorper. Sed eu dictum lorem, ac fringilla nisi. Maecenas eu risus a risus
+                        sodales tempor. Phasellus a nibh vulputate, placerat nisl vel, fringilla dolor. Donec eu orci
+                        neque. Maecenas eget est orci. Maecenas velit magna, faucibus ac nulla efficitur, gravida luctus
+                        orci.</p>
+                    <a href="HK2.html"><button class="hk2-btn" type="button">Read More</button></a>
+                </article>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <nav class="footer-nav">
+                    <div class="footer_logo">
+                        <img class="imglogo" src="./image/icon.png" alt="icon">
+                        <h2 class="footerh2">Hannah's Kitchen</h2>
+
+                        <div class="footer-columns">
+                            <div class="footer-column">
+                                <h5 class="footer-subheading">Company</h5>
+                                <ul class="footerul">
+                                    <li class="footerli"><a href="#"></a>About Us</li>
+                                    <li class="footerli"><a href="#"></a>our Team</li>
+                                    <li class="footerli"><a href="#"></a>Events</li>
+                                    <li class="footerli"><a href="#"></a>The Test Kitchen</li>
+                                </ul>
+                                <div class="footer-column">
+                                    <h5 class="footer-subheading">Get Help</h5>
+                                    <ul class="footerul">
+                                        <li class="footerli"><a href="#"></a>Customer Care</li>
+                                        <li class="footerli"><a href="#"></a>FAQ</li>
+                                        <li class="footerli"><a href="#"></a>Your Account</li>
+                                    </ul>
+                                    <div class="footer-column">
+                                        <h5 class="footer-subheading">Explore</h5>
+                                        <ul class="footerul">
+                                            <li class="footerli"><a href="#"></a>Recipes</li>
+                                            <li class="footerli"><a href="#"></a>Food</li>
+                                            <li class="footerli"><a href="#"></a>Living</li>
+                                            <li class="footerli"><a href="#"></a>Travel</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+                <div class="footer-action">
+                    <div class="footer-mailinglist">
+                        <h4 class="footerh4">Hannnh's Kirchen Newsletter </h4>
+                        <span class="Footer-subheading"> Subscribe to our newsletter to get our best tips in your inbox
+                            daily.</span>
+
+
+                        <div class="mailing-list">
+                            <form action="" method="POST" target="_blank">
+                                <input class="mailing-listinput" type="email" placeholder="fantasticsppon@kit.com"
+                                    tabindex="1">
+                                <button class="mailing-listinput-btn" type="submit" tabindex="2">Sign Up</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="footer-socialicon">
+                        <a class="footer-socialicons" href=""><i class="fab fa-facebook-square"></i></a>
+                        <a class="footer-socialicons" href=""><i class="fab fa-twitter-square"></i></a>
+                        <a class="footer-socialicons" href=""><i class="fab fa-instagram"></i></a>
+                        <a class="footer-socialicons" href=""><i class="fab fa-pinterest"></i></a>
+                        <a class="footer-socialicons" href=""><i class="fab fa-youtube"></i></a>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </footer>
+        <script src="./js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="./js/vendor/main.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
